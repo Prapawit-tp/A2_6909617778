@@ -20,9 +20,13 @@ body {
     padding: 48px 0 56px;
 }
 
-.hero h1 { color: #fff; }
+.hero h1 {
+    color: #fff;
+}
 
-.hero-sub { color: #cfcfcf; }
+.hero-sub {
+    color: #cfcfcf;
+}
 
 .profile-photo {
     width: 100%;
@@ -38,7 +42,9 @@ body {
     font-weight: 500;
 }
 
-.about-list dd { margin-bottom: 4px; }
+.about-list dd {
+    margin-bottom: 4px;
+}
 
 /*---------- Section headings ---------- */
 .section-title {
@@ -69,7 +75,9 @@ body {
     font-weight: 500;
 }
 
-.item-meta dd { margin-bottom: 2px; }
+.item-meta dd {
+    margin-bottom: 2px;
+}
 
 .item-label {
     font-size: 1rem;
@@ -98,7 +106,9 @@ a {
     font-weight: 500;
 }
 
-a:hover { color: var(--red); }
+a:hover {
+    color: var(--red);
+}
 
 /* ---------- Links band + buttons ---------- */
 .links-band {
@@ -132,4 +142,20 @@ a:hover { color: var(--red); }
 .site-footer {
     background-color: var(--charcoal);
     color: #bdbdbd;
+}
+
+/* ---------- Mobile tweaks ---------- */
+@media (max-width: 575.98px) {
+    .hero {
+        padding: 32px 0 40px;
+        text-align: center;
+    }
+
+    .about-list {
+        text-align: left;
+    }
+
+    .portfolio-card {
+        padding: 18px;
+    }
 }
