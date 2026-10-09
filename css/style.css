@@ -1,3 +1,135 @@
+:root {
+    --charcoal: #282828;
+    --red: #e61718;
+    --red-dark: #b81112;
+    --paper: #f4f4f4;
+    --muted: #5c5f62;
+}
+
 body {
     font-family: "Noto Sans Thai", Arial, sans-serif;
+    background-color: var(--paper);
+    color: var(--charcoal);
+    line-height: 1.7;
+}
+
+/* ---------- About / hero ---------- */
+.hero {
+    background-color: var(--charcoal);
+    color: #f4f4f4;
+    padding: 48px 0 56px;
+}
+
+.hero h1 { color: #fff; }
+
+.hero-sub { color: #cfcfcf; }
+
+.profile-photo {
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 4px solid var(--red);
+    border-radius: 50%;
+}
+
+.about-list dt {
+    color: var(--red);
+    font-weight: 500;
+}
+
+.about-list dd { margin-bottom: 4px; }
+
+/*---------- Section headings ---------- */
+.section-title {
+    color: var(--charcoal);
+    font-weight: 700;
+    border-bottom: 3px solid var(--red);
+    padding-bottom: 6px;
+    display: inline-block;
+}
+
+/* ---------- Portfolio cards ---------- */
+.portfolio-card {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-top: 6px solid var(--red);
+    border-radius: 6px;
+    padding: 24px;
+}
+
+.item-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.item-meta dt {
+    color: var(--muted);
+    font-weight: 500;
+}
+
+.item-meta dd { margin-bottom: 2px; }
+
+.item-label {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--red);
+    margin: 16px 0 4px;
+}
+
+.skill {
+    background-color: var(--charcoal);
+    font-weight: 500;
+}
+
+.reflection dt {
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.reflection dd {
+    margin-left: 0;
+    color: #3d3f41;
+}
+
+a {
+    color: var(--red-dark);
+    font-weight: 500;
+}
+
+a:hover { color: var(--red); }
+
+/* ---------- Links band + buttons ---------- */
+.links-band {
+    background-color: #e8e9ea;
+    border-top: 1px solid #d0d1d2;
+}
+
+.btn-brand {
+    background-color: var(--red);
+    border-color: var(--red);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: var(--red-dark);
+    border-color: var(--red-dark);
+    color: #fff;
+}
+
+.btn-outline-brand {
+    border: 2px solid var(--charcoal);
+    color: var(--charcoal);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--charcoal);
+    color: #fff;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    background-color: var(--charcoal);
+    color: #bdbdbd;
 }
